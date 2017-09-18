@@ -11,6 +11,7 @@ body {
 }
 
 a { text-decoration: none; }
+ul { list-style: none; }
 
 span { color: #56a79a; }
 
@@ -142,11 +143,7 @@ nav a:hover {
 	padding: 30px 0;
 }
 
-#features > .container {
-	/*border:  solid gold;*/
-}
-
-#features > .container .row { text-align: center; margin-bottom: 30px; }
+#features > .container > .row { text-align: center; margin-bottom: 30px; }
 
 #features .flex-row {
 	/*border: solid cyan;*/
@@ -205,7 +202,113 @@ nav a:hover {
 
 
 	
-	/* Sec: Info */
+		/* Sec: Info */
 #info {
 	background: url(../img/info-bg.jpg) no-repeat center;
+	background-size: cover;
+	padding-bottom: 20px;
+}
+
+/*#info .container { border: solid gold; }*/
+
+#info .container > .row {
+	/*border: solid cyan;*/
+}
+
+#info img {
+	width: 100%;
+}
+
+#info .row > div:nth-child(2) {
+	/*border: solid purple;*/
+	text-align: center;
+	color: #fff;
+	font-size: 125%;
+}
+
+#info .row > div:nth-child(2) h2 {
+	margin-bottom: 30px;
+}
+
+#info ul li {
+	padding: 10px 0;
+}
+
+@media (min-width: 768px) {
+	
+	#info .row {
+		display: flex;
+	}
+
+	#info .row > div {
+		flex: 1;
+	}
+
+	#info .row > div:nth-child(2) {
+		margin: auto 0;
+	}
+}
+
+
+
+	/* Sec: Contact */
+#contact {
+	background: #333;
+	color: #fff;
+	padding: 20px 0;
+	text-align: center;
+}
+
+#contact .row div:nth-child(2) {
+	/*border: solid silver;*/
+	margin: 25px 0;
+}
+
+#contact .row h3 { font-size: 130%; text-transform: uppercase; margin-bottom: 10px; }
+
+#contact .row li { padding: 5px 0; }
+
+#contact .row i { margin-right: 10px; }
+
+#contact .form-row {
+	/*border: solid orange;*/
+	margin-top: 10px;
+}
+
+#contact .form-row input[type="text"] {
+	padding: 7px;
+}
+#contact .form-row button {
+	border: none;
+	background: #222;
+	color: #fff;
+	padding: 9px 15px;
+}
+
+@media (min-width: 768px) {
+	#contact { text-align: left;	}
+	
+	#contact .row {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	#contact .row > div {
+		flex-basis: 30%;
+	}
+
+	#contact .row div:nth-child(2) {
+		margin: 0;
+	}
+	
+}
+
+
+
+
+footer {
+	background: #56a79a;
+	color: #fff;
+	padding: 20px 0;
+	text-align: center;
 }
