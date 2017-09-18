@@ -100,6 +100,7 @@ nav a:hover {
 /* Sec: Showcase */
 #showcase {
 	background: url(../img/showcase.jpg) no-repeat center;
+	background-size: cover;
 	height: 100vh;
 	border-bottom: 1px solid #56a79a;
 	display: flex;
@@ -200,4 +201,11 @@ nav a:hover {
 		margin-top: 0;
 	}
 
+}
+
+
+	
+	/* Sec: Info */
+#info {
+	background: url(../img/info-bg.jpg) no-repeat center;
 }
