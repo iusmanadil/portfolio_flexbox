@@ -50,7 +50,6 @@ nav ul li {
 }
 
 nav a {
-	/*border: solid;*/
 	display: block;
 	padding: 10px;
 	color: #888;
@@ -59,6 +58,7 @@ nav a {
 nav a:hover {
 	color: #56a79a;
 }
+nav li.active a { color: #56a79a; }
 
 @media (min-width: 525px) {
 	
@@ -301,6 +301,99 @@ nav a:hover {
 		margin: 0;
 	}
 	
+}
+
+
+
+	
+		/* Page: About */
+#about-us .container h1 { margin: 30px 0; }
+
+#about-us .container > div {
+	text-align: center;
+}
+
+#about-us h2 { margin: 15px 0; }
+
+#about-us p {
+	margin: 15px 0;
+}
+
+
+
+		/* Page: Services */
+#services h1 {
+	margin: 20px 0;
+}
+#services h1+h2 { text-align: center; margin-bottom: 10px; }
+
+#services ul { 
+	color: #fff;
+	text-align: center;
+	margin: 25px 0 40px;
+}
+#services ul li { padding: 20px 10px; }
+#services ul li:nth-child(odd) {
+	background: #333;
+}
+#services ul li:nth-child(even) {
+	background: #56a79a;
+}
+
+#services h3 { margin: 15px 0; }
+
+
+
+		/* Page: Contact */
+	
+#contact-form h1 {
+	margin: 20px 0;
+}
+
+#contact-form .container > div {
+	text-align: center;
+	margin: 25px 0;
+}
+
+#contact-form h2 {margin-bottom: 20px; }
+#contact-form h2+p { margin-bottom: 10px; }
+
+#contact-form form {
+	background: #333;
+	color: #fff;
+	text-align: center;
+	padding: 20px 0;
+}
+
+#contact-form .form-row {
+	margin-top: 10px;
+}
+
+.form-row input, 
+.form-row label,
+.form-row textarea {
+	display: block;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+    width: 50%;
+    height: 30px;
+    margin-bottom: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#contact-form textarea { height: 100px; }
+
+#contact-form button {
+	display: inline-block;
+	background: #222;
+	color: #fff;
+	border: none;
+	width: 50%;
+	padding: 10px 0;	
+	/*text-align: center;*/
 }
 
 
